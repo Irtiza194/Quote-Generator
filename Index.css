@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background-color: #333;
+  width: 50em;
+  height: 30em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result {
+  width: 40em;
+  height: 15em;
+  background-color: #f2eeea;
+  border-radius: 1em;
+  margin-top: 1em;
+  margin-bottom: 5em;
+}
+#btn {
+  display: block;
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-weight: 500;
+  color: #333;
+  background-color: #f2eeea;
+  font-family: "Lato", sans-serif;
+}
+#btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px #f2eeea;
+}
+#btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+#btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background-color: #fff;
+}
+#label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9%;
+  margin-inline: 2em;
+  font-size: 25px;
+}
+#author {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #333333;
+  margin: 20px 0 60px 0;
+  float: right;
+  margin-top: 3em;
+  margin-right: 7em;
+}
+#author::before {
+  content: "- ";
+}
+@media screen and (max-width: 815px) {
+  .box {
+    background-color: #333;
+    width: 30em;
+    height: 30em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .result {
+    width: 20em;
+    height: 13em;
+    background-color: #f2eeea;
+    border-radius: 1em;
+  }
+  #btn {
+    display: block;
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-weight: 500;
+    color: #333;
+    background-color: #f2eeea;
+    font-family: "Lato", sans-serif;
+    margin-top: 2em;
+  }
+  #btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #f2eeea;
+  }
+  #btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  #btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
+  }
+  #label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+    margin-inline: 2em;
+    font-size: 20px;
+  }
+  #author {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #333333;
+    margin: 20px 0 60px 0;
+    float: right;
+    margin-top: 3em;
+    margin-right: 7em;
+  }
+  #author::before {
+    content: "- ";
+  }
+}
+@media screen and (max-width: 495px) {
+  .box {
+    background-color: #333;
+    width: 20em;
+    height: 30em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .result {
+    width: 15em;
+    height: 15em;
+    background-color: #f2eeea;
+    border-radius: 1em;
+  }
+  #btn {
+    display: block;
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-weight: 500;
+    color: #333;
+    background-color: #f2eeea;
+    font-family: "Lato", sans-serif;
+    margin-top: -1em;
+  }
+  #btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #f2eeea;
+  }
+  #btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  #btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
+  }
+  #label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+    margin-inline: 2em;
+    font-size: 20px;
+  }
+  #author {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #333333;
+    margin: 20px 0 60px 0;
+    float: right;
+    margin-top: 3em;
+    margin-right: 7em;
+  }
+  #author::before {
+    content: "- ";
+  }
+}
+@media screen and (max-width: 332px) {
+  .box {
+    background-color: #333;
+    width: 18em;
+    height: 28em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .result {
+    width: 15em;
+    height: 20em;
+    background-color: #f2eeea;
+    border-radius: 1em;
+    margin-top: -3em;
+  }
+  #btn {
+    display: block;
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-weight: 500;
+    color: #333;
+    background-color: #f2eeea;
+    font-family: "Lato", sans-serif;
+    margin-top: -1em;
+  }
+  #btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #f2eeea;
+  }
+  #btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  #btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #fff;
+  }
+  #label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+    margin-inline: 2em;
+    font-size: 20px;
+  }
+  #author {
+    text-transform: uppercase;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #333333;
+    margin: 20px 0 60px 0;
+    float: right;
+    margin-top: 3em;
+    margin-right: 20px;
+  }
+  #author::before {
+    content: "- ";
+  }
+}
